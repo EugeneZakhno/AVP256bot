@@ -3,7 +3,6 @@ package io.github.eugenezakhno.telegrambotspringboot.transformer;
 import io.github.eugenezakhno.telegrambotspringboot.model.telegram.TelegramUser;
 import org.springframework.stereotype.Component;
 import org.telegram.telegrambots.meta.api.objects.User;
-
 import java.time.LocalDateTime;
 
 @Component

@@ -1,4 +1,4 @@
-package com.avp256.avp256_bot.model;
+package io.github.eugenezakhno.telegrambotspringboot.model;
 
 import lombok.*;
 import lombok.experimental.FieldDefaults;
