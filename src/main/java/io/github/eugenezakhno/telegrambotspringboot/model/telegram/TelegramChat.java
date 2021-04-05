@@ -1,6 +1,5 @@
 package io.github.eugenezakhno.telegrambotspringboot.model.telegram;
 
-import jdk.jshell.Snippet;
 import lombok.*;
 import lombok.experimental.FieldDefaults;
 

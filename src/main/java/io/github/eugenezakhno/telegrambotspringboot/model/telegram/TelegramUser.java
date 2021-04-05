@@ -1,7 +1,6 @@
 package io.github.eugenezakhno.telegrambotspringboot.model.telegram;
 
-import com.avp256.avp256_bot.model.Person;
-import jdk.jshell.Snippet;
+import io.github.eugenezakhno.telegrambotspringboot.model.Person;
 import lombok.*;
 import lombok.experimental.FieldDefaults;
 
