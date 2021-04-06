@@ -31,11 +31,11 @@ public class AuthTelegramMessageHandler implements TelegramMessageHandler {
         personRepository.findByAuthCode(authCode)
                 .ifPresent(person -> {
                     TelegramUser user = telegramUpdate.getMessage().getFrom();
-                    user.setPerson(person);
+
                     telegramUserRepository.save(user);
 
                     Long chatId = telegramUpdate.getMessage().getChat().getId();
-                    String text = "You have been authorized as " + person.getName();
+                    String text = "You have been authorized as ";
                     avp256Bot.sendTextMessage(chatId, text);
                 });
     }
