@@ -67,7 +67,7 @@ public class Avp256Bot extends TelegramLongPollingBot {
         try {
             execute(sendMessage);
         } catch (TelegramApiException e) {
-            log.error(e);
+           System.err.println("Error");
         }
     }
 
