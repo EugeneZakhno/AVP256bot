@@ -1,6 +1,6 @@
 package io.github.eugenezakhno.telegrambotspringboot.repository;
 
-import com.avp256.avp256_bot.model.Person;
+
 import org.springframework.data.repository.PagingAndSortingRepository;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 

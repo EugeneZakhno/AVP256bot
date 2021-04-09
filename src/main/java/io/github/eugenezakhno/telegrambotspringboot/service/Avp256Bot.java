@@ -56,6 +56,11 @@ public class Avp256Bot extends TelegramLongPollingBot {
         );
     }
 
+    @Override
+    public String getBotUsername() {
+        return null;
+    }
+
     public synchronized void sendTextMessage(Long chatId, String text) {
         SendMessage sendMessage = new SendMessage();
         sendMessage.enableMarkdown(true);
@@ -91,4 +96,8 @@ public class Avp256Bot extends TelegramLongPollingBot {
         return replyKeyboardMarkup;
     }
 
+    @Override
+    public String getBotToken() {
+        return null;
+    }
 }
