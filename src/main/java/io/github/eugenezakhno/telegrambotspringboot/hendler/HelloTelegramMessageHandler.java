@@ -27,7 +27,7 @@ public class HelloTelegramMessageHandler implements TelegramMessageHandler {
         }
         Long chatId = telegramUpdate.getMessage().getChat().getId();
         TelegramUser user = telegramUpdate.getMessage().getFrom();
-        String text = Stream.of("Hello", user.getLastName(), user.getFirstName())
+        String text = Stream.of("Hi", user.getLastName(), user.getFirstName())
                 .filter(Objects::nonNull)
                 .collect(Collectors.joining(" "));
         avp256Bot.sendTextMessage(chatId, text);
