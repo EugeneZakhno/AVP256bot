@@ -26,7 +26,7 @@ public class HelpTelegramMessageHandler implements TelegramMessageHandler {
         if (Objects.isNull(telegramUpdate.getMessage().getFrom().getPerson())) {
             text = "Help service is allowed only for authorized users";
         } else {
-            text = "We will help you";
+            text = "We'll help you";
         }
         TelegramUser user = telegramUpdate.getMessage().getFrom();
         avp256Bot.sendTextMessage(chatId, text);

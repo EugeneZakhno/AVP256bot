@@ -1,6 +1,7 @@
 package io.github.eugenezakhno.telegrambotspringboot.repository;
 
 
+import io.github.eugenezakhno.telegrambotspringboot.model.Person;
 import org.springframework.data.repository.PagingAndSortingRepository;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
