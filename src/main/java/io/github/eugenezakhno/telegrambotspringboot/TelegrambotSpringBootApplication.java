@@ -11,5 +11,4 @@ public class TelegrambotSpringBootApplication {
 		ApiContextInitializer.init();
 		SpringApplication.run(TelegrambotSpringBootApplication.class, args);
 	}
-
 }
