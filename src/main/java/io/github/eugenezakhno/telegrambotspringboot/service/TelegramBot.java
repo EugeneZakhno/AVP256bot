@@ -15,16 +15,11 @@ import org.telegram.telegrambots.meta.api.objects.replykeyboard.ReplyKeyboardMar
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.buttons.KeyboardButton;
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.buttons.KeyboardRow;
 
-import java.util.ArrayList;
-import java.util.List;
 
 @Component
 @Log4j2
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class TelegramBot extends TelegramLongPollingBot {
-    public static final String HELLO_BUTTON = "Hello";
-    public static final String START_COMMAND = "/start";
-    public static final String HELP_BUTTON = "Help";
 
     @Getter
     @Value("${bot.avp256.username}")
@@ -34,35 +29,18 @@ public class TelegramBot extends TelegramLongPollingBot {
     String botToken;
 
 
-    public synchronized void sendTextMessage(Long chatId, String text) {
-        SendMessage sendMessage = new SendMessage();
-        sendMessage.enableMarkdown(true);
-        sendMessage.setChatId(chatId);
-        sendMessage.setText(text);
-        sendMessage.setReplyMarkup(getCustomReplyKeyboardMarkup());
+    @Override
+    public void onUpdateReceived(Update update) {
 
     }
 
-    private ReplyKeyboardMarkup getCustomReplyKeyboardMarkup() {
-        ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
-        replyKeyboardMarkup.setSelective(true);
-        replyKeyboardMarkup.setResizeKeyboard(true);
-        replyKeyboardMarkup.setOneTimeKeyboard(false);
-
-        List<KeyboardRow> keyboard = new ArrayList<>();
-
-        KeyboardRow keyboardFirstRow = new KeyboardRow();
-        keyboardFirstRow.add(new KeyboardButton(HELLO_BUTTON));
-
-        KeyboardRow keyboardSecondRow = new KeyboardRow();
-        keyboardSecondRow.add(new KeyboardButton(HELP_BUTTON));
-
-        keyboard.add(keyboardFirstRow);
-        keyboard.add(keyboardSecondRow);
-        replyKeyboardMarkup.setKeyboard(keyboard);
-        return replyKeyboardMarkup;
+    @Override
+    public String getBotUsername() {
+        return null;
     }
 
-
-
+    @Override
+    public String getBotToken() {
+        return null;
+    }
 }
