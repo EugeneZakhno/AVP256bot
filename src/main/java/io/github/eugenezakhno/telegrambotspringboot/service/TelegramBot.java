@@ -63,9 +63,6 @@ public class TelegramBot extends TelegramLongPollingBot {
         return replyKeyboardMarkup;
     }
 
-    @Override
-    public void onUpdateReceived(Update update) {
 
-    }
 
 }
