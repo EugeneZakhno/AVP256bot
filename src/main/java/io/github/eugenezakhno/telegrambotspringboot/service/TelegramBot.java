@@ -18,13 +18,6 @@ import org.telegram.telegrambots.meta.api.objects.Update;
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class TelegramBot extends TelegramLongPollingBot {
 
-    @Getter
-    @Value("${bot.avp256.username}")
-    String botUsername;
-    @Getter
-    @Value("${bot.avp256.token}")
-    String botToken;
-
 
     @Override
     public void onUpdateReceived(Update update) {
