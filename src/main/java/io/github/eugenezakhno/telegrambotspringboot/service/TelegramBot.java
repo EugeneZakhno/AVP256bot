@@ -1,7 +1,6 @@
 package io.github.eugenezakhno.telegrambotspringboot.service;
 
 import lombok.AccessLevel;
-import lombok.Getter;
 import lombok.experimental.FieldDefaults;
 
 
