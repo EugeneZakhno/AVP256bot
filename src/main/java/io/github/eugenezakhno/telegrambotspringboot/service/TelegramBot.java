@@ -20,11 +20,11 @@ public class TelegramBot extends TelegramLongPollingBot {
 
     @Override
     public String getBotUsername() {
-        return null;
+        return "OSONtestbot";
     }
 
     @Override
     public String getBotToken() {
-        return null;
+        return "1381210707:AAH68fziyIQE91UlKRQC_I1ftdr-KXTfEoQ";
     }
 }
